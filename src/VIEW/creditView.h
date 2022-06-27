@@ -12,12 +12,12 @@ class CreditView : public QDialog {
     Q_OBJECT
 
  public:
-    explicit CreditView(s21::CalculatorController *controller, QWidget *parent = nullptr);
+    explicit CreditView(CalculatorController *controller, QWidget *parent = nullptr);
     ~CreditView();
 
  private:
     Ui::CreditWindow *ui;
-    s21::CalculatorController* _controller;
+    CalculatorController* _controller;
 
  signals:
     void signal();

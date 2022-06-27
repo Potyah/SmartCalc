@@ -495,4 +495,3 @@ void CalculatorModel::checkCorrectX(char prev, char next) {
         throw std::invalid_argument("Number cannot be after x");
     }
 }
-}

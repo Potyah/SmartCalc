@@ -18,12 +18,12 @@ class CalculatorView : public QMainWindow {
     Q_OBJECT
 
  public:
-    explicit CalculatorView(s21::CalculatorController *controller, QWidget *parent = nullptr);
+    explicit CalculatorView(CalculatorController *controller, QWidget *parent = nullptr);
     ~CalculatorView();
 
  private:
     Ui::CalculatorView *ui;
-    s21::CalculatorController* _controller;
+    CalculatorController* _controller;
     CreditView *credit;
     GraphView *graph;
     DepositView *deposit;

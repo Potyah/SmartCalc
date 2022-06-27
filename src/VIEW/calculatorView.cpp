@@ -1,6 +1,6 @@
 #include "calculatorView.h"
 
-CalculatorView::CalculatorView(s21::CalculatorController *controller, QWidget *parent) : QMainWindow(parent),
+CalculatorView::CalculatorView(CalculatorController *controller, QWidget *parent) : QMainWindow(parent),
                                                                                 ui(new Ui::CalculatorView),
                                                                                 _controller(controller) {
     ui->setupUi(this);
@@ -87,8 +87,8 @@ void CalculatorView::getExpressionResult() {
 
 void CalculatorView::xExpressionResult() {
     QMessageBox msgBox;
-    msgBox.setText("Choose actiion");
-    msgBox.setInformativeText("Are you want build a graph?");
+    msgBox.setText("Choose action");
+    msgBox.setInformativeText("Do you want build a graph?");
     msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
     msgBox.setIcon(QMessageBox::Question);
 
@@ -105,7 +105,7 @@ void CalculatorView::xExpressionResult() {
             graph -> setModal(true);
             graph -> exec();
         } else {
-            ui -> resultLabel -> setText("Uncorrect exeption");
+            ui -> resultLabel -> setText("Incorrect exception");
         }
     } else {
         double valueX = QInputDialog::getDouble(this, tr("Enter number"), tr("x value:"),

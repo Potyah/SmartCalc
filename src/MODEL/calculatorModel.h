@@ -7,8 +7,6 @@
 #include <sstream>
 #include <array>
 
-#define PI 3.14159265358979323846
-
 using stack_type = std::pair<std::string, int>;
 const std::array<std::string, 9> FUNCTIONS = {"atan", "asin", "acos", "sqrt", "sin",
                                               "cos", "tan", "ln", "log" };

@@ -16,7 +16,7 @@ class DepositView : public QDialog {
     Q_OBJECT
 
  public:
-    explicit DepositView(s21::CalculatorController *controller, QWidget *parent = nullptr);
+    explicit DepositView(CalculatorController *controller, QWidget *parent = nullptr);
     ~DepositView();
 
  private:
@@ -25,7 +25,7 @@ class DepositView : public QDialog {
     std::map<int, double> replenishment;
     std::map<int, double>  withdrawal;
     int paymentsPeriodicity;
-    s21::CalculatorController* _controller;
+    CalculatorController* _controller;
 
  signals:
     void signal();

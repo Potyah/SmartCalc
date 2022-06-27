@@ -1,7 +1,7 @@
 #include "creditView.h"
 #include "ui_creditView.h"
 
-CreditView::CreditView(s21::CalculatorController *controller, QWidget *parent) : QDialog(parent),
+CreditView::CreditView(CalculatorController *controller, QWidget *parent) : QDialog(parent),
                                                                              ui(new Ui::CreditWindow),
                                                                              _controller(controller) {
     ui->setupUi(this);

@@ -1,7 +1,7 @@
 #include "depositView.h"
 #include "ui_depositView.h"
 
-DepositView::DepositView(s21::CalculatorController *controller, QWidget *parent) : QDialog(parent),
+DepositView::DepositView(CalculatorController *controller, QWidget *parent) : QDialog(parent),
                                                                             ui(new Ui::DepositView),
                                                                             _controller(controller) {
     ui->setupUi(this);

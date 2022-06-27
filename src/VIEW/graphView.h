@@ -15,12 +15,12 @@ class GraphView : public QDialog {
     Q_OBJECT
 
  public:
-    explicit GraphView(s21::CalculatorController *controller, QWidget *parent = nullptr);
+    explicit GraphView(CalculatorController *controller, QWidget *parent = nullptr);
     ~GraphView();
 
  private:
     Ui::GraphView *ui;
-    s21::CalculatorController* _controller;
+    CalculatorController* _controller;
 
  public slots:
     void setExpressionSlot(QString expressinon);

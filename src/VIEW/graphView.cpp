@@ -2,7 +2,7 @@
 #include "ui_graphView.h"
 #include <QVector>
 
-GraphView::GraphView(s21::CalculatorController *controller, QWidget *parent) : QDialog(parent),
+GraphView::GraphView(CalculatorController *controller, QWidget *parent) : QDialog(parent),
                                                                           ui(new Ui::GraphView),
                                                                           _controller(controller) {
     ui->setupUi(this);
